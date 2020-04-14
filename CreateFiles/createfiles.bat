@@ -2,14 +2,20 @@
 setlocal enabledelayedexpansion
 pushd "%~dp0"
 
+set extention=txt
 set /p filename="File name -> "
 set /p num="How many  -> "
 
 for /l %%i in (1,1,%num%) do (
   set val=%%i
-  type nul > %filename%!val!.txt
+
+  if exist %filename%!val!.%extention% (
+    echo [Error] %filename%!val!.%extention% already exists.
+  )else (
+    type nul > %filename%!val!.%extention%
+    echo Created %~dp0%filename%!val!.%extention%
+  )
 )
-echo Created %num% files at %~dp0
 
 popd
 endlocal

@@ -7,9 +7,14 @@ set /p num="How many    -> "
 
 for /l %%i in (1,1,%num%) do (
   set val=%%i
-  mkdir %foldername%!val!
+
+  if exist %foldername%!val! (
+    echo [Error] %foldername%!val! already exists.
+  )else (
+    mkdir %foldername%!val!
+    echo Created %~dp0%foldername%!val!
+  )
 )
-echo Created %num% folders at %~dp0
 
 popd
 endlocal
