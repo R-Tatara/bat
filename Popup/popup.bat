@@ -1,4 +1,8 @@
 @echo off
+rem ----------------------------------------
+rem インフォメーションポップアップを表示する
+rem ----------------------------------------
+
 setlocal
 pushd "%~dp0"
 
@@ -9,3 +13,4 @@ echo msgbox %message%, vbInformation, %title% > %TEMP%/msgboxtest.vbs & %TEMP%/m
 
 popd
 endlocal
+exit
