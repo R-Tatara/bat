@@ -6,3 +6,4 @@ echo %date:~2,9% | clip
 
 popd
 endlocal
+exit /B 0

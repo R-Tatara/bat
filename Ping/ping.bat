@@ -4,6 +4,7 @@ pushd "%~dp0"
 
 ping "192.168.0.20"
 
+pause
 popd
 endlocal
-pause
+exit /B 0

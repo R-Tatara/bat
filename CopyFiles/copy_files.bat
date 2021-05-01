@@ -13,3 +13,4 @@ echo;
 pause
 popd
 endlocal
+exit /B 0

@@ -16,4 +16,4 @@ goto bat_end
 
 popd
 endlocal
-exit
+exit /B 0

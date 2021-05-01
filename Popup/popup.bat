@@ -9,4 +9,4 @@ echo msgbox %message%, vbInformation, %title% > %TEMP%/msgboxtest.vbs & %TEMP%/m
 
 popd
 endlocal
-exit
+exit /B 0

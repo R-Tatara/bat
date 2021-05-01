@@ -17,4 +17,4 @@ else (
 
 popd
 endlocal
-exit
+exit /B 0

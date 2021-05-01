@@ -17,7 +17,7 @@ for /l %%i in (1,1,%num%) do (
   )
 )
 
+pause
 popd
 endlocal
-pause
-exit
+exit /B 0

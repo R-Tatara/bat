@@ -10,3 +10,4 @@ for /f "tokens=1 delims=," %%a in (init.dat) do (
 pause
 popd
 endlocal
+exit /B 0

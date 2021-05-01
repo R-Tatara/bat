@@ -7,3 +7,4 @@ Dir /b > list.txt
 
 popd
 endlocal
+exit /B 0
