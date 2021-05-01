@@ -1,8 +1,4 @@
 @echo off
-rem ----------------------------------------
-rem 指定した数の.txtファイルを作成する
-rem ----------------------------------------
-
 setlocal enabledelayedexpansion
 pushd "%~dp0"
 

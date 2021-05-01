@@ -2,9 +2,8 @@
 setlocal
 pushd "%~dp0"
 
-netsh interface ip show config
+ping "192.168.0.20"
 
 popd
 endlocal
 pause
-exit
