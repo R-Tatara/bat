@@ -1,8 +1,4 @@
 @echo off
-rem ----------------------------------------
-rem 指定した数の.txtファイルを作成する
-rem ----------------------------------------
-
 setlocal enabledelayedexpansion
 pushd "%~dp0"
 
@@ -21,7 +17,7 @@ for /l %%i in (1,1,%num%) do (
   )
 )
 
+pause
 popd
 endlocal
-pause
-exit
+exit /B 0

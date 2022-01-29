@@ -1,8 +1,4 @@
 @echo off
-rem ----------------------------------------
-rem テキストファイルを新規作成する
-rem ----------------------------------------
-
 setlocal
 pushd "%~dp0"
 
@@ -20,4 +16,4 @@ goto bat_end
 
 popd
 endlocal
-exit
+exit /B 0

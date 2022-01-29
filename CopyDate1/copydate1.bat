@@ -2,9 +2,8 @@
 setlocal
 pushd "%~dp0"
 
-netsh interface ip show config
+echo %date:~0,4%%date:~5,2%%date:~8,2% | clip
 
-pause
 popd
 endlocal
 exit /B 0
